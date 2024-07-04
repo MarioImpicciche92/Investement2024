@@ -11,7 +11,7 @@ import { InvestmentModel } from '../model/investment-input.model';
 })
 export class UserInputComponent {
 
-  @Output () calculate=new EventEmitter<InvestmentModel>();
+  @Output() calculate=new EventEmitter<InvestmentModel>();
   enteredInitialInvestment='0';
   enteredAnnualInvestment="0";
   enteredExpectedReturn="5";

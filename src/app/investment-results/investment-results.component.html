@@ -5,12 +5,21 @@
     <table>
     <thead>
         <tr></tr>
-        <th>Interest Value</th>
         <th>Interest Year</th>
+        <th>Interest Value</th>
         <th>Total Interest</th>
         <th>Invested Capital</th>
     </thead>
-    <tbody></tbody>
+    <tbody>
+        @for(result of results;track result.year){
+            <tr>
+                <td class="center">{{ result.year }}</td>
+                <td class="center">{{ result.valueEndOfYear }}</td>
+                <td class="center">{{ result.totalInterest }}</td>
+                <td class="center"> {{ result.totalAmountInvested }}</td>
+            </tr>
+        }
+    </tbody>
 </table>
 }
 
